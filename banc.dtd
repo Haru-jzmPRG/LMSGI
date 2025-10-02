@@ -1,0 +1,23 @@
+<!ELEMENT banco (sucursal+)>
+
+<!ELEMENT sucursal (nombre, direccion, cuenta+)>
+<!ATTLIST sucursal
+    codigo ID #REQUIRED
+>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+
+<!ELEMENT cuenta (iban, saldo, cliente+)>
+<!ATTLIST cuenta
+    codigo ID #REQUIRED
+    activa (si|no) "si"
+>
+
+<!ELEMENT iban (#PCDATA)>
+<!ELEMENT saldo (#PCDATA)>
+
+<!ELEMENT cliente (nif, nombre, telefono?)>
+
+<!ELEMENT nif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
