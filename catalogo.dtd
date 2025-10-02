@@ -1,0 +1,8 @@
+<!ELEMENT catalog (book+)>
+
+<!ELEMENT book (dc:title, dc:creator, dc:date)>
+<!ATTLIST book id ID #REQUIRED>
+
+<!ELEMENT dc:title (#PCDATA)>
+<!ELEMENT dc:creator (#PCDATA)>
+<!ELEMENT dc:date (#PCDATA)>
