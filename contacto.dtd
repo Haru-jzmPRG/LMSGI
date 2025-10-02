@@ -1,0 +1,13 @@
+<!ELEMENT addressBook (contact+)>
+
+<!ELEMENT contact (name, email, phone, addr:address)>
+<!ATTLIST contact id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT addr:address (addr:street, addr:city)>
+<!ELEMENT addr:street (#PCDATA)>
+<!ELEMENT addr:city (#PCDATA)>
