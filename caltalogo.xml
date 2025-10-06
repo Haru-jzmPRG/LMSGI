@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE videoteca SYSTEM "catalogo.dtd">
 
-<catalog>
+<catalog xmlns:dc="http://www.micatalogo.org/libros>
     <book id="bk-001">
         <dc:title>Té-ología de la Abuela</dc:title>
         <dc:creator>Roger Gutiérrez</dc:creator>
@@ -19,5 +19,6 @@
         <dc:creator>Aurea Publishing</dc:creator>
         <dc:date>2025</dc:date>
     </book>
+
 
 </catalog>
