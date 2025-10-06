@@ -2,7 +2,7 @@
 <!DOCTYPE addressBook SYSTEM "contacto.dtd">
 
 
-<addressBook>
+<addressBook xmlns:addr="https://www.addressBook.org/addr">
 
   <contact id="c1">
     <name>María López</name>
@@ -33,5 +33,6 @@
       <addr:city>Marbella</addr:city>
     </addr:address>
   </contact>
+
 
 </addressBook>
