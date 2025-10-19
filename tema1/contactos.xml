@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE addressBook SYSTEM "contacto.dtd">
+
+
+<addressBook xmlns:addr="https://www.addressBook.org/addr">
+
+  <contact id="c1">
+    <name>María López</name>
+    <email>maria@example.com</email>
+    <phone>+34 600 111 222</phone>
+    <addr:address>
+      <addr:street>Av. del Mar 10</addr:street>
+      <addr:city>Málaga</addr:city>
+    </addr:address>
+  </contact>
+
+  <contact id="c2">
+    <name>John Smith</name>
+    <email>john@work.com</email>
+    <phone>+44 20 7000 1234</phone>
+    <addr:address>
+      <addr:street>221B Baker St</addr:street>
+      <addr:city>London</addr:city>
+    </addr:address>
+  </contact>
+
+  <contact id="c3">
+    <name>Lucía Fernández</name>
+    <email>lucia@example.org</email>
+    <phone>+34 952 555 777</phone>
+    <addr:address>
+      <addr:street>Calle Real 45</addr:street>
+      <addr:city>Marbella</addr:city>
+    </addr:address>
+  </contact>
+
+
+</addressBook>

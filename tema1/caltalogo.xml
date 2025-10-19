@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoteca SYSTEM "catalogo.dtd">
+
+<catalog xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <book>
+        <title>Harry Potter</title>
+        <dc:language>Castellano</dc:lenguage>
+        <dc:creator>J.K Rowling</dc:creator>
+    </book>
+
+    <book>
+        <title>El Quijote</title>
+        <dc:language>Castellano</dc:lenguage>
+        <dc:creator>Miguel de Cervantes</dc:creator>
+    </book>
+
+    <book>
+        <title>El Principito</title>
+        <dc:language>Frances</dc:lenguage>
+        <dc:creator>Antonio Saint-Exupery</dc:creator>
+    </book>
+
+    <book>
+        <title>Té-ología de la Abuela</title>
+        <dc:language>Castellano</dc:lenguage>
+        <dc:creator>Roger Gutierrez</dc:creator>
+    </book>
+    
+
+
+</catalog>

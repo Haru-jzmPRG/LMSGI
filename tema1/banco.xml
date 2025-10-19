@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE banco SYSTEM "banco.dtd">
+<banco>
+
+  <sucursal id="S001">
+    <nombre>Sucursal Centro Málaga</nombre>
+    <direccion>Av. de Andalucía 45, Málaga</direccion>
+
+    <cuenta iban="C001">
+      <cliente>
+        <nif>12345678A</nif>
+        <nombre>María López</nombre>
+        <telefono>+34 600 111 222</telefono>
+      </cliente>
+      <cliente>
+        <nif>87654321B</nif>
+        <nombre>Javier Ruiz</nombre>
+      </cliente>
+    </cuenta>
+
+    <cuenta iban="C002">
+      <iban>ES98 0012 3456 7890 1234 5678</iban>
+      <saldo>2450.00</saldo>
+      <cliente>
+        <nif>44556677C</nif>
+        <nombre>Lucía Fernández</nombre>
+        <telefono>+34 952 555 777</telefono>
+      </cliente>
+    </cuenta>
+  </sucursal>
+
+  <sucursal id="S002">
+    <nombre>Sucursal Marbella</nombre>
+    <direccion>Calle Real 10, Marbella</direccion>
+
+    <cuenta iban="C003">
+      <iban>ES21 0049 1500 1234 5678 9012</iban>
+      <saldo>8930.10</saldo>
+      <cliente>
+        <nif>11223344D</nif>
+        <nombre>Carlos Gómez</nombre>
+      </cliente>
+      <cliente>
+        <nif>99887766E</nif>
+        <nombre>Ana Pérez</nombre>
+        <telefono>+34 601 222 333</telefono>
+      </cliente>
+    </cuenta>
+  </sucursal>
+
+  <sucursal iban="C004">
+    <nombre>Sucursal Sevilla</nombre>
+    <direccion>Av. de la Constitución 12, Sevilla</direccion>
+
+    <cuenta id="S003">
+      <iban>ES00 1234 5678 9012 3456 7890</iban>
+      <saldo>1200.50</saldo>
+      <cliente>
+        <nif>55667788F</nif>
+        <nombre>Pedro Sánchez</nombre>
+      </cliente>
+    </cuenta>
+  </sucursal>
+
+</banco>
