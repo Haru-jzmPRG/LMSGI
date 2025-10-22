@@ -1,0 +1,40 @@
+
+
+h1 {
+    text-align: left;
+    color: red;
+}
+
+.trabajador, .trabajador1 {
+    background-color: gray;
+}
+
+.trabajador .trabajador1, h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.trabajador h2 {
+    color: blue;
+}
+.trabajador1 h2 {
+    color: green;
+}
+
+.trabajador .trabajador1, h3{
+    text-align: left;
+    font-weight: bold;
+}
+
+.datos{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+} 
+
+.estudios {
+    margin: 10px;
+    padding: 10px;
+    border: 4px double black;
+}
+
