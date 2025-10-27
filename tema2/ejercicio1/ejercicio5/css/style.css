@@ -1,13 +1,12 @@
 body {
-    background: white;
     margin: 20px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 150px);
-    grid-auto-rows: 60px;
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;        
+    gap: 15px;             
+    width: 330px;           
 }
 
 .box {
@@ -18,34 +17,14 @@ body {
     align-items: center;
     font-weight: bold;
     font-size: 18px;
+    width: 150px;           
+    height: 60px;
 }
 
-#a {
-    border-radius: 0px 0px 50px 0px;
-}
-
-#b {
-    border-radius: 50px 0px 0px 0px;
-}
-
-#c {
-    border-radius: 20px;
-}
-
-#d {
-    border-radius: 50px 0px 50px 0px;
-}
-
-#e {
-    border-radius: 0;
-}
-
-#f {
-    width: 60px;
-    border-radius: 50px;
-}
-
-#g {
-    border-radius: 20px 0px 50px 20px;
-}
-
+#a { border-radius: 0px 0px 50px 0px; }
+#b { border-radius: 50px 0px 0px 0px; }
+#c { border-radius: 20px; }
+#d { border-radius: 50px 0px 50px 0px; }
+#e { border-radius: 0; }
+#f { width: 60px; border-radius: 50px; }
+#g {border-radius: 20px 0px 50px 20px;}
