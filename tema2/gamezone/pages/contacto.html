@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de videojuegos">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>GameZone Contacto</title>
+</head>
+<body>
+    <header class="cabecera">
+
+        <!-- Logo/marca de la página -->
+        <div class="brand">
+            <img class="logo" src="../imagenes/gamezone-logo.png" alt="Logo de GameZone">
+            <!-- <h1 class="titulo">GameZone</h1> -->
+        </div>
+
+        
+        <!-- Menú de navegación -->
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guías</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main id="contenido-principal">
+        <!-- Formulario de contacto -->
+        <section class="tarjetaF">
+            <h2>Formulario de contacto</h2>
+            <form name="contact" action="contacto.html" method="post">
+                
+                <!-- Campo de texto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="name" id="nombre" required>
+
+                <!-- Campo de email -->
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <!-- Campo de texto -->
+                <label for="description">Descripción:</label>
+                <textarea name="description" id="description" maxlength="1024" rows="7" cols="30" required></textarea>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
