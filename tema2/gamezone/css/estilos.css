@@ -204,7 +204,27 @@ form[name=contact] label{
     margin-bottom: 20px;
 }
 
+form[name=contact] select {
+    padding: 10px;
+    border: 1px solid #0D203A;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+}
+
 form[name=contact] input{
+    padding: 10px;
+    border: 1px solid #0D203A;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+}
+
+form[name=contact] .checkbox input{
+    display: flex;
+    flex-direction: row;
     padding: 10px;
     border: 1px solid #0D203A;
     border-radius: 5px;
@@ -222,7 +242,7 @@ form[name=contact] textarea{
     width: 100%;
 }
 
-form[name=contact] button{
+form[name=contact] .botones input{
     font-size: 1rem;
     background-color: #0D203A;
     color: #fff;
@@ -231,9 +251,36 @@ form[name=contact] button{
     border-radius: 5px;
 }
 
-form[name=contact] button:hover{
+form[name=contact] .botones input:hover{
     background-color: #4995ff;
     color: #0D203A;
+}
+
+/* --- Corrige alineación de radios y checkbox --- */
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Sobrescribe la regla anterior SOLO para los label dentro de .checkbox */
+form[name=contact] .checkbox label {
+    flex-direction: row !important;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+.checkbox input[type="radio"],
+.checkbox input[type="checkbox"] {
+    accent-color: #0D203A; /* color corporativo */
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
 }
 
 /* Formulario de registro */
