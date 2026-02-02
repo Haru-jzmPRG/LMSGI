@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+    <question type="multichoice">
+        <name>Unidad 1</name>
+        <questiontext format="html">¿Qué característica principal distingue a los lenguajes de marcas?</questiontext>
+        <defaultgrade>7</defaultgrade>
+        <single>true</single>
+        <shuffleanswers>1</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="100">El uso de etiquetas y estructura jerárquica</answer>
+        <answer fraction="0">La capacidad de ejecutar código directamente</answer>
+        <answer fraction="0">La dependencia de un sistema operativo concreto</answer>
+    </question>
+
+    <question type="truefalse">
+        <name>Unidad 1</name>
+        <questiontxt format="html">XML Es un lenguaje de Marca</questiontxt>
+        <defaultgrade>7</defaultgrade>
+        <answer fraction="0">
+            <text>False</text>
+        </answer>
+        <answer fraction="100">
+            <text>True</text>
+        </answer>
+    </question>
+</quiz>

@@ -331,3 +331,128 @@ form[name=register] button:hover{
     font-size: 14px;
     background: #2C3E50;
 }
+
+
+/* ============================= */
+/*            TIENDA             */
+/* ============================= */
+
+/* Contenedor de las tarjetas */
+.lista-cards {
+    margin-top: 1.5rem;
+}
+
+/* Layout flexible para las cards */
+.lista-cards--flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Card individual */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    width: 260px;
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Imagen del producto */
+.card-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Título del producto */
+.card-titulo {
+    font-size: 1.2rem;
+    margin: 0.7rem 0;
+    color: #0D203A;
+}
+
+/* Descripción */
+.card-descripcion {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.7rem;
+}
+
+/* Precio */
+.card-precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0D203A;
+    margin-bottom: 1rem;
+}
+
+/* Botón */
+.card-boton {
+    display: inline-block;
+    background: #0D203A;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-boton:hover {
+    background-color: #4995ff;
+    color: #0D203A;
+}
+
+/* ============================= */
+/*        GRID DE EJEMPLO        */
+/* ============================= */
+
+.intro-grid {
+    margin-top: 2rem;
+}
+
+/* Grid con ÁREAS */
+.parent {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.area-header   { grid-area: header; background: #0D203A; color: white; padding: 10px; }
+.area-nav      { grid-area: nav;    background: #ddd; padding: 10px; }
+.area-main     { grid-area: main;   background: #eee; padding: 10px; }
+.area-aside    { grid-area: aside;  background: #ccc; padding: 10px; }
+.area-footer   { grid-area: footer; background: #0D203A; color: white; padding: 10px; }
+
+/* Grid de números */
+.contenedor-grid {
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.item-grid {
+    background: #0D203A;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
