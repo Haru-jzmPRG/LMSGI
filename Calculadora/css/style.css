@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Segment7Standard";
+    src: url("../fonts/Segment7Standard.ttf");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    font-family: "Segment7Standard", monospace;
+}
+
+body {
+    background: #f0fff0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.conteiner {
+    background: #1f1f1f;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 320px;    
+    padding: 20px;
+}
+
+.screen {
+    background: #000;
+    font-size: 2.5rem;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background: #2d2d2d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 18px;    
+}
+
+.button:hover {
+    background: #3a3a3a;
+}
+
+.double {
+    grid-column: span 2;
+}
+
+.control, .immediately {
+    background: 3b3b3b;
+}
+
+.operation {
+    background: #4b4bff;
+}
+
+.equal{
+    background: #ff9500;
+}
+
+.crl-normal {
+    color: white;
+}
+
+.crl-error {
+    color: red;
+}
+
+.crl-suma {
+    color: #4bff4b;
+}
+
+.crl-resta {
+    color: #ff884b;
+}
+
+.crl-multiplicar {
+    color: #ffbf00;
+}
+
+.crl-division {
+    color: #00c8ff;
+}
+
+.crl-inverso {
+    color: #b084ff;
+}
+
+.crl-cuadrado {
+    color: #ff4bd8;
+}
+
+.crl-raiz {
+    color: #00ffbf;
+}
+
+#inversa {
+  background-image: url(../imagenes/icon_1_over_x_white_normal.svg);
+  background-size: 50px;                              
+  background-repeat: no-repeat;                       
+  background-position: center center;                 
+}
+
+#cuadrado {
+  background-image: url(../imagenes/icon_x_squared_white_normal.svg);  
+  background-size: 50px;                              
+  background-repeat: no-repeat;                       
+  background-position: center center;                 
+}
+
+#raiz {
+  background-image: url(../imagenes/icon_square_root_white_normal.svg);  
+  background-size: 50px;                             
+  background-repeat: no-repeat;                      
+  background-position: center center;                
+}
+
+footer {
+    background: #f0fff0;
+    color: #3d6b5d;
+    font-family: "Arial", sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+footer .autor {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
