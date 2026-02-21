@@ -23,6 +23,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Guías</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="registro.html">Registro</a></li>
             </ul>
@@ -40,6 +41,27 @@
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="name" id="nombre" required>
 
+                <!-- Lista desplegable -->
+                <label for="categoria">Categoría de juego:</label>
+                <select name="categoria" id="categoria">
+                    <option disabled selected>-Selecciona categoría-</option>
+                    <option value="rol">Rol</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="deportes">Deportes</option>
+                </select>
+
+                <!-- Radio y checkbox -->
+                <label for="plataforma">Plataforma:</label>
+                <div class="checkbox">
+                    <label><input type="radio" name="plataforma" value="pc" required>PC</label>
+                    <label><input type="radio" name="plataforma" value="ps5">PS5</label>
+                </div>
+
+                <label for="suscripcion">Suscribirse a noticias:</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="suscripcion" checked>Sí</label>
+                </div>
+
                 <!-- Campo de email -->
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
@@ -47,9 +69,14 @@
                 <!-- Campo de texto -->
                 <label for="description">Descripción:</label>
                 <textarea name="description" id="description" maxlength="1024" rows="7" cols="30" required></textarea>
-                <button type="submit">Registrar</button>
+                
+                <!-- Botones -->
+                <div class="botones">
+                    <input type="submit" value="Contactar">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
             </form>
-        </section>
+        </section>        
     </main>
 
     <footer class="pie">

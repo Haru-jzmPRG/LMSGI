@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventario SYSTEM "T1-Exam-DTD-GutierrezJazmin.dtd">
+
+<inventario>
+    <item sku="">
+        <nombre>Camisa</nombre>
+        <precio>5</precio>
+        <stock>3</stock>
+    </item>
+
+    <item sku="">
+        <nombre>Pantalon</nombre>
+        <precio>7</precio>
+        <stock>10</stock>
+    </item>
+
+    <item sku="">
+        <nombre>Falda</nombre>
+        <precio >6</precio>
+        <stock>2</stock>
+    </item>
+</inventario>
