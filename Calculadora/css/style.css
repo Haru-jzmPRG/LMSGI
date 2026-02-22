@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Segment7Standard";
-    src: url("../fonts/Segment7Standard.ttf");
+    src: url("../fonts/Segment7Standard.otf");
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -11,7 +11,6 @@
     padding: 0;
     padding-bottom: 5px;
     box-sizing: border-box;
-    font-family: "Segment7Standard", monospace;
 }
 
 body {
@@ -33,11 +32,12 @@ header {
     text-align: center;
 }
 
-.title {
+.title, .screen{
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: 2px;
+    font-family: "Segment7Standard", monospace;
 }
 
 .conteiner {
@@ -84,7 +84,7 @@ header {
 }
 
 .control, .immediately {
-    background: 3b3b3b;
+    background: #3b3b3b;
 }
 
 .operation {
@@ -95,39 +95,39 @@ header {
     background: #ff9500;
 }
 
-.crl-normal {
+.clr-normal {
     color: white;
 }
 
-.crl-error {
+.clr-error {
     color: red;
 }
 
-.crl-suma {
+.clr-suma {
     color: #4bff4b;
 }
 
-.crl-resta {
+.clr-resta {
     color: #ff884b;
 }
 
-.crl-multiplicar {
+.clr-multiplicar {
     color: #ffbf00;
 }
 
-.crl-division {
+.clr-division {
     color: #00c8ff;
 }
 
-.crl-inverso {
+.clr-inverso {
     color: #b084ff;
 }
 
-.crl-cuadrado {
+.clr-cuadrado {
     color: #ff4bd8;
 }
 
-.crl-raiz {
+.clr-raiz {
     color: #00ffbf;
 }
 
@@ -155,7 +155,6 @@ header {
 footer {
     background: #f0fff0;
     color: #3d6b5d;
-    font-family: "Arial", sans-serif;
     font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -163,7 +162,8 @@ footer {
     text-align: center;
 }
 
-footer .autor {
+footer .author, footer .description, footer p, footer u{
+    font-family: "Arial", sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
     margin-top: 0.5rem;
