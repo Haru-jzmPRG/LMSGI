@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jazmin Gutierrez Castro">
+    <title>Spoke Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="img/spock-hand-gesture.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-juego">PIEDRA · PAPEL · TIJERA · LAGARTO · SPOCK</h1>
+        <p class="subtitulo-juego">El juego definitivo (con partes opcionales)</p>
+    </header>
+    <main>
+        <div class="paneles-arriba">
+            <div class="panel-seleccion-jugada">
+                <h2>Elige tu jugada</h2>
+                <div class="contenedor-elecciones-juego">
+
+                    <button class="boton-eleccion-jugada" data-jugada="piedra">
+                        <img class="icono-jugada" src="img/piedra.png" alt="Piedra">
+                        <span>Piedra</span>
+                    </button>
+
+                    <button class="boton-eleccion-jugada" data-jugada="papel">
+                        <img class="icono-jugada" src="img/papel.png" alt="Papel">
+                        <span>Papel</span>
+                    </button>
+
+                    <button class="boton-eleccion-jugada" data-jugada="tijera">
+                        <img class="icono-jugada" src="img/tijera.png" alt="Tijera">
+                        <span>Tijera</span>
+                    </button>
+
+                    <button class="boton-eleccion-jugada" data-jugada="lagarto">
+                        <img class="icono-jugada" src="img/lagarto.png" alt="Lagarto">
+                        <span>Lagarto</span>
+                    </button>
+
+                    <button class="boton-eleccion-jugada" data-jugada="spock">
+                        <img class="icono-jugada" src="img/spock.png" alt="Spock">
+                        <span>Spock</span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="panel-batalla">
+                <h2>Batalla</h2>
+                <div class="contenedor-jugadores">
+
+                    <div class="jugador">
+                        <p class="etiqueta-jugador">Tú</p>
+                        <div class="mostrar-jugada" id="display-jugador">
+                            <span class="placeholder">?</span>
+                        </div>
+                    </div>
+
+                    <div class="vs-circle">VS</div>
+
+                    <div class="jugador">
+                        <p class="etiqueta-jugador">CPU</p>
+                        <div class="mostrar-jugada" id="display-cpu">
+                            <span class="placeholder">?</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="paneles-abajo">
+            <div class="contenedor-resultado">
+                <div class="resultados">
+                    <p class="mensaje-resultado">¡Batalla!</p>
+                    <div class="estadisticas-juego">
+
+                        <div class="panel-estadistica">
+                            <span class="valor-estadistica" id="contador-victorias">0</span>
+                            <span class="etiqueta-estadistica">Victorias</span>
+                        </div>
+
+                        <div class="panel-estadistica">
+                            <span class="valor-estadistica" id="contador-derrotas">0</span>
+                            <span class="etiqueta-estadistica">Derrotas</span>
+                        </div>
+
+                        <div class="panel-estadistica">
+                            <span class="valor-estadistica" id="contador-empates">0</span>
+                            <span class="etiqueta-estadistica">Empates</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-botones-opcional">
+                <button class="boton-secundario" id="boton-reiniciar">Reiniciar juego</button>
+                <button class="boton-secundario" id="boton-reglas">Mostrar reglas</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Proyecto evaluación RA 03 - Lenguajes de marcas y sistemas de gestión de información</p>
+        <p>Proyecto realizado por: 👉JAZMIN GUTIERREZ CASTRO👈 (Declaro que no he usado IA en el proyecto)</p>
+    </footer>
+    <div class="reglas-overlay" id="reglas-overlay">
+        <div class="overlay-contenido">
+            <button class="cerrar" id="cerrar">✕</button>
+            <img src="img/reglas_finish.png" alt="Reglas del juego">
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
